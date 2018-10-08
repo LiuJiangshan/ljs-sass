@@ -1,0 +1,71 @@
+@mixin w100 {
+  width: 100%;
+}
+
+@mixin w100_padding($padding-h:10px) {
+  @include w100;
+  padding-left: $padding-h;
+  padding-right: $padding-h;
+}
+
+@mixin w100_margin($margin-h:10px) {
+  width: calc(100% - #{$margin-h} * 2);
+  margin-left: $margin-h;
+  margin-right: $margin-h;
+}
+
+@mixin h100 {
+  height: 100%;
+}
+
+@mixin wh100 {
+  @include w100;
+  @include h100;
+}
+
+@mixin wh100_margin($margin:10px) {
+  width: calc(100% - #{$margin} * 2);
+  margin: $margin;
+  height: calc(100% - #{$margin} * 2);
+}
+
+@mixin wh100_padding($padding:10px) {
+  padding: $padding;
+  @include wh100;
+}
+
+@mixin flex_h {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex_v {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex_center {
+  @include flex_h;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex_h_center {
+  @include flex_center;
+  @include flex_h;
+}
+
+@mixin flex_v_center {
+  @include flex_center;
+  @include flex_v;
+}
+
+@mixin square($size:25px) {
+  width: $size;
+  height: $size;
+}
+
+@mixin debug {
+  box-sizing: border-box;
+  border: 2px red solid;
+}

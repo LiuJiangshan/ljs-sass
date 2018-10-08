@@ -1,0 +1,31 @@
+@import "./mixin.scss";
+
+$ljs-sass-border-color: #dcdcdc !default;
+@mixin border {
+  border: 1px $ljs-sass-border-color solid;
+  box-sizing: border-box;
+}
+
+@mixin box-shadow {
+  box-shadow: 0 1px 1px 0 $ljs-sass-border-color;
+}
+
+@mixin top-border {
+  border-top: 1px $ljs-sass-border-color solid;
+  box-sizing: border-box;
+}
+
+@mixin bottom-border {
+  border-bottom: 1px $ljs-sass-border-color solid;
+  box-sizing: border-box;
+}
+
+@mixin left-border {
+  border-left: 1px $ljs-sass-border-color solid;
+  box-sizing: border-box;
+}
+
+@mixin right-border {
+  border-right: 1px $ljs-sass-border-color solid;
+  box-sizing: border-box;
+}
