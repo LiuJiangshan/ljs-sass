@@ -65,7 +65,7 @@
   height: $size;
 }
 
-@mixin debug {
+@mixin debug($border-color:#f3051d) {
   box-sizing: border-box;
-  border: 2px red solid;
+  border: 2px $border-color solid;
 }
