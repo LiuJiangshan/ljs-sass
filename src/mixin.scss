@@ -1,3 +1,5 @@
+@import "var";
+
 @mixin w100 {
   width: 100%;
 }
@@ -58,6 +60,35 @@
 @mixin flex_v_center {
   @include flex_center;
   @include flex_v;
+}
+
+@mixin border($border-color:$ljs-sass-border-color) {
+  border: 1px $border-color solid;
+  box-sizing: border-box;
+}
+
+@mixin box-shadow($border-color:$ljs-sass-border-color) {
+  box-shadow: 0 1px 1px 0 $border-color;
+}
+
+@mixin top-border($border-color:$ljs-sass-border-color) {
+  border-top: 1px $border-color solid;
+  box-sizing: border-box;
+}
+
+@mixin bottom-border($border-color:$ljs-sass-border-color) {
+  border-bottom: 1px $border-color solid;
+  box-sizing: border-box;
+}
+
+@mixin left-border($border-color:$ljs-sass-border-color) {
+  border-left: 1px $border-color solid;
+  box-sizing: border-box;
+}
+
+@mixin right-border($border-color:$ljs-sass-border-color) {
+  border-right: 1px $border-color solid;
+  box-sizing: border-box;
 }
 
 @mixin square($size:25px) {
