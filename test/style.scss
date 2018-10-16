@@ -1,0 +1,48 @@
+@import "../src/mixin";
+
+html, body {
+  @include wh100;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  @include square(150px);
+  @include debug(#a488dd);
+  &.h-center {
+    @include flex_h_center;
+  }
+  &.h-left {
+    @include flex_h_left;
+  }
+  &.h-right {
+    @include flex_h_right;
+  }
+  &.h-top {
+    @include flex_h_top;
+  }
+  &.h-bottom {
+    @include flex_h_bottom;
+  }
+  &.v-center {
+    @include flex_v_center;
+  }
+  &.v-left {
+    @include flex_v_left;
+  }
+  &.v-right {
+    @include flex_v_right;
+  }
+  &.v-top {
+    @include flex_v_top;
+  }
+  &.v-bottom {
+    @include flex_v_bottom;
+  }
+  > .small-box {
+    @include square(20px);
+    background-color: #769ddd;
+    margin: 5px;
+  }
+}

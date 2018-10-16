@@ -52,14 +52,63 @@
   justify-content: center;
 }
 
+//横向垂直水平居中
 @mixin flex_h_center {
   @include flex_center;
   @include flex_h;
 }
 
+//横向居右
+@mixin flex_h_left {
+  @include flex_h;
+  justify-content: flex-start;
+}
+
+//横向居右
+@mixin flex_h_right {
+  @include flex_h;
+  justify-content: flex-end;
+}
+
+//横向居上
+@mixin flex_h_top {
+  @include flex_h;
+  align-items: flex-start;
+}
+
+//横向居下
+@mixin flex_h_bottom {
+  @include flex_h;
+  align-items: flex-end;
+}
+
 @mixin flex_v_center {
   @include flex_center;
   @include flex_v;
+}
+
+//纵向居右
+@mixin flex_v_left {
+  @include flex_v;
+  align-items: flex-start;
+}
+
+//纵向居右
+@mixin flex_v_right {
+  @include flex_v;
+  align-items: flex-end;
+}
+
+//纵向居上
+@mixin flex_v_top {
+  @include flex_v;
+  justify-content: flex-start;
+}
+
+//纵向居下
+@mixin flex_v_bottom {
+  @include flex_v;
+  justify-content: flex-end;
 }
 
 @mixin border($border-color:$ljs-sass-border-color) {

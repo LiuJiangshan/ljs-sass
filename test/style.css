@@ -1,0 +1,78 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  border: 2px #a488dd solid;
+}
+.box.h-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.box.h-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.box.h-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.box.h-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.box.h-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.box.v-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.box.v-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.box.v-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.box.v-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.box.v-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.box > .small-box {
+  width: 20px;
+  height: 20px;
+  background-color: #769ddd;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
