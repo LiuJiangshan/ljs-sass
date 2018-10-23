@@ -140,9 +140,16 @@
   box-sizing: border-box;
 }
 
+/**正方形*/
 @mixin square($size:25px) {
   width: $size;
   height: $size;
+}
+
+/**圆形*/
+@mixin circle($size:25px) {
+  border-radius: 50%;
+  @include square($size)
 }
 
 @mixin debug($border-color:#f3051d) {
