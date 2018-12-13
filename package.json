@@ -1,0 +1,35 @@
+{
+  "name": "ljs-sass",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LiuJiangshan/ljs-sass.git"
+  },
+  "description": "ljs-sass",
+  "author": {
+    "name": "liujiangshan",
+    "email": "ljs234@qq.com"
+  },
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+  },
+  "keywords": [
+    "utils",
+    "sass",
+    "scss"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
