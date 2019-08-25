@@ -24,8 +24,8 @@
 
 @mixin h100_margin($margin-h:10px) {
   height: calc(100% - #{$margin-h} * 2);
-  margin-left: $margin-h;
-  margin-right: $margin-h;
+  margin-top: $margin-h;
+  margin-bottom: $margin-h;
 }
 
 @mixin h100 {
