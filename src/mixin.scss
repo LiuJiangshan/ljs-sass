@@ -48,6 +48,26 @@
   @include wh100;
 }
 
+@mixin margin_h($value) {
+  margin-left: $value;
+  margin-right: $value;
+}
+
+@mixin margin_v($value) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+@mixin padding_h($value) {
+  padding-left: $value;
+  padding-right: $value;
+}
+
+@mixin padding_v($value) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
 @mixin flex_h {
   display: flex;
   flex-direction: row;
@@ -164,6 +184,7 @@
   @include square($size)
 }
 
+/**调试边框*/
 @mixin debug($border-color:#f3051d) {
   box-sizing: border-box;
   border: 2px $border-color solid;
