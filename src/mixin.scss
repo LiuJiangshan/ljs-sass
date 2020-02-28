@@ -69,18 +69,24 @@
 }
 
 @mixin flex_h {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: row;
   flex-direction: row;
 }
 
 @mixin flex_v {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
 }
 
 @mixin flex_center {
   @include flex_h;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
@@ -93,24 +99,28 @@
 //横向居右
 @mixin flex_h_left {
   @include flex_h;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
 //横向居右
 @mixin flex_h_right {
   @include flex_h;
+  -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
 
 //横向居上
 @mixin flex_h_top {
   @include flex_h;
+  -webkit-align-items: flex-start;
   align-items: flex-start;
 }
 
 //横向居下
 @mixin flex_h_bottom {
   @include flex_h;
+  -webkit-justify-content: flex-end;
   align-items: flex-end;
 }
 
@@ -122,24 +132,28 @@
 //纵向居右
 @mixin flex_v_left {
   @include flex_v;
+  -webkit-align-items: flex-start;
   align-items: flex-start;
 }
 
 //纵向居右
 @mixin flex_v_right {
   @include flex_v;
+  -webkit-align-items: flex-end;
   align-items: flex-end;
 }
 
 //纵向居上
 @mixin flex_v_top {
   @include flex_v;
+  -webkit-justify-content: flex-start;
   justify-content: flex-start;
 }
 
 //纵向居下
 @mixin flex_v_bottom {
   @include flex_v;
+  -webkit-justify-content: flex-end;
   justify-content: flex-end;
 }
 
